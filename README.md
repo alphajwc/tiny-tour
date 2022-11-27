@@ -5,7 +5,7 @@
 [![Gzip Size](https://img.shields.io/bundlephobia/minzip/tiny-tour.js.svg)](https://unpkg.com/tinyview.js@1.0.3/tiny-tour.min.js)
 
 ## Features Demo
-<img src="https://github.com/jacksonCV1114/TinyView/blob/main/demo.gif" width="300"/>
+<img src="https://github.com/jacksonCV1114/tiny-tour/blob/master/demo.gif" width="300"/>
 
 
 ## Features
