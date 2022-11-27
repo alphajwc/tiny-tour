@@ -8,17 +8,18 @@
 <img src="https://github.com/jacksonCV1114/tiny-tour/blob/master/demo.gif" width="300"/>
 
 
-## Features
+## Features Highlights
 * Next Step
 * Previous Step
-* Image
+* Support Image
+* Responsive Design
 
 ## Main Files and Descriptions
 ```
 src/
-├── tiny-tour.css       (uncompressed)
+├── tiny-tour.css   (uncompressed)
 ├── tiny-tour.css   (compressed)
-├── tiny-tour.js        (uncompressed)
+├── tiny-tour.js    (uncompressed)
 └── tiny-tour.js    (compressed)
 ```
 

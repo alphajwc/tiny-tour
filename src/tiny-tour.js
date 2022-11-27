@@ -172,19 +172,24 @@ class TinyTour {
     });
     resizeObserver.observe(this.tourView);
 
-    // Scroll into target element after transition
-    this.tourView.ontransitionend = ()=>{
+    window.onresize= ()=>{
+      this.render();
+      this.scrollIntoView();
+    };
+
+    this.scrollIntoView = ()=>{
       this.tourView.scrollIntoView({
         behavior: 'smooth',
         block: 'center',
         inline: 'nearest',
       });
     };
+
+    // Scroll into target element after transition
+    this.tourView.ontransitionend = ()=>{
+      this.scrollIntoView();
+    };
     this.render();
-    this.tourView.scrollIntoView({
-      behavior: 'smooth',
-      block: 'center',
-      inline: 'nearest',
-    });
+    this.scrollIntoView();
   }
 }
