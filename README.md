@@ -1,8 +1,7 @@
 # Tiny-Tour.js
 > A lightweight javascript library for step-by-step product tours and user onboarding guides
 
-[![Version](https://img.shields.io/npm/v/tiny-tour.js.svg)](https://www.npmjs.com/package/tiny-tour.js) 
-[![Gzip Size](https://img.shields.io/bundlephobia/minzip/tiny-tour.js.svg)](https://unpkg.com/tinyview.js@1.0.3/tiny-tour.min.js)
+[![Version](https://img.shields.io/npm/v/tiny-tour.svg)](https://www.npmjs.com/package/tiny-tour) 
 
 ## Features Demo
 <img src="https://github.com/jacksonCV1114/tiny-tour/blob/master/demo.gif" width="300"/>
@@ -19,9 +18,9 @@
 ```
 src/
 ├── tiny-tour.css   (uncompressed)
-├── tiny-tour.min.css   (compressed)
+├── tiny-tour.css   (compressed)
 ├── tiny-tour.js    (uncompressed)
-└── tiny-tour.min.js    (compressed)
+└── tiny-tour.js    (compressed)
 ```
 
 ## Getting Started
