@@ -1,0 +1,15 @@
+{
+  "name": "tiny-tour",
+  "version": "1.0.0",
+  "description": "A lightweight javascript library for step-by-step product tours and user onboarding guides",
+  "main": "tiny-tour.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "jacksonwong",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
