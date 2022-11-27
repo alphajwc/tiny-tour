@@ -8,8 +8,7 @@
 <img src="https://github.com/jacksonCV1114/tiny-tour/blob/master/demo.gif" width="300"/>
 
 ## Demo Website
-<a href src="https://htmlpreview.github.io/?https://github.com/jacksonCV1114/tiny-tour/blob/master/demo/index.html">Click here</a>
-
+[Click Here - Demo Website](https://htmlpreview.github.io/?https://github.com/jacksonCV1114/tiny-tour/blob/master/demo/index.html)
 ## Features Highlights
 * Next Step
 * Previous Step
