@@ -19,9 +19,9 @@
 ```
 src/
 ├── tiny-tour.css   (uncompressed)
-├── tiny-tour.css   (compressed)
+├── tiny-tour.min.css   (compressed)
 ├── tiny-tour.js    (uncompressed)
-└── tiny-tour.js    (compressed)
+└── tiny-tour.min.js    (compressed)
 ```
 
 ## Getting Started
