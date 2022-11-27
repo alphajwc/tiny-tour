@@ -1,26 +1,26 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../src/tiny-tour.css">
+        <link rel="stylesheet" href="../src/tiny-tour.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='../src/tiny-tour.js'></script>
+        <script src='../src/tiny-tour.min.js'></script>
     </head>
     
     <body>
-        <div id="abc" style="position:absolute;top:1000px;">
+        <div id="target1" style="position:absolute;top:1000px;">
             <p> I am the long long long long long long long long long target</p>
         </div>  
-        <div id="abc2" style="position:absolute;top:300px;">
+        <div id="target2" style="position:absolute;top:300px;">
             <p> I am the target</p>
         </div>  
-        <div id="abc3" style="position:absolute;top:300px;left:400px">
+        <div id="target3" style="position:absolute;top:300px;left:400px">
             <p> I am the target</p>
         </div>  
     </body>
     <script>
         const stepList = [];
-        stepList.push(new Step('abc',`<img width='200px' height='200px' src="https://unsplash.it/200/200">`,`Let me show you `))
-        stepList.push(new Step('abc2','Welcome to the Tutorial','Creating a Shepherd tour is easy. too! Just create a `Tour` instance, and add as many steps as you want.'))
-        stepList.push(new Step('abc3','Welcome to the Tutorial','Creating a Shepherd tour is easy. too! Just create a `Tour` instance, and add as many steps as you want.'))
+        stepList.push(new Step('target1',`<img width='200px' height='200px'src="https://unsplash.it/200/200">`,`Let me show you`))
+        stepList.push(new Step('target2','Title 2','Description2'))
+        stepList.push(new Step('target3','Title 3','Description3'))
         const tinyTour = new TinyTour(stepList);
     </script>
 </html>
