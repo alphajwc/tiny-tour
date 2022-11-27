@@ -1,4 +1,4 @@
 /node_modules/
 .eslintrc.json
 .babelrc
-demo.html
+demo/demo.html
