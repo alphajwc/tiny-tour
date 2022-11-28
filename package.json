@@ -11,5 +11,15 @@
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-config-google": "^0.14.0"
-  }
+  },
+  "dependencies": {
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
