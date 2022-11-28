@@ -10,16 +10,17 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.28.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "postcss": "^8.4.19",
+    "stylelint": "^14.15.0",
+    "stylelint-config-sass-guidelines": "^9.0.1"
   },
   "dependencies": {
-    "stylelint": "^14.15.0",
+    "autoprefixer": "^10.4.13",
+    "postcss-loader": "^7.0.1",
     "stylelint-config-standard": "^29.0.0"
   },
   "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
+    "last 4 version"
   ]
 }
