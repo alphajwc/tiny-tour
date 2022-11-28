@@ -15,6 +15,7 @@ class Step {
 
 class TinyTour {
   constructor(stepList) {
+    this.finish = false;
     // check if the param array stepList is an intance of Step
     // and have valid ids
     for (const elem of stepList) {
@@ -81,8 +82,6 @@ class TinyTour {
       // Positioning the tour box
       const targetPos = getElementPos(this.target);
       const tourViewPos = getElementPos(this.tourView);
-      console.log('targetPos', targetPos);
-      console.log('tourViewPos', tourViewPos);
 
       if (targetPos.top + tourViewPos.height + 10 > window.innerHeight ) {
         this.tourView.style.top = `${targetPos.top-tourViewPos.height-10}px`;
@@ -108,6 +107,7 @@ class TinyTour {
       // determine if the tour ends
       if (this.index+2 > this.stepList.length) {
         resizeObserver.unobserve(this.tourView);
+        this.finish = true;
         this.tourView.style.display = 'none'; return;
       };
       // point to the next step and re-render
@@ -123,6 +123,7 @@ class TinyTour {
       // determine if the tour ends
       if (this.index-1 <0) {
         resizeObserver.unobserve(this.tourView);
+        this.finish = true;
         this.tourView.style.display = 'none';
         return;
       };
@@ -154,6 +155,7 @@ class TinyTour {
     this.closeBtn.addEventListener('click', ()=>{
       resizeObserver.unobserve(this.tourView);
       this.target.classList.remove('tiny-tour-target');
+      this.finish = true;
       this.tourView.style.display = 'none';
     });
 
@@ -173,8 +175,10 @@ class TinyTour {
     resizeObserver.observe(this.tourView);
 
     window.onresize= ()=>{
-      this.render();
-      this.scrollIntoView();
+      if (!this.finish) {
+        this.render();
+        this.scrollIntoView();
+      }
     };
 
     this.scrollIntoView = ()=>{
