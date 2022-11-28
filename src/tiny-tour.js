@@ -16,6 +16,7 @@ class Step {
 class TinyTour {
   constructor(stepList) {
     this.finish = false;
+    this.pictureInside = false;
     // check if the param array stepList is an intance of Step
     // and have valid ids
     for (const elem of stepList) {
