@@ -37,7 +37,7 @@ In browser:
 <script src="/path/to/tiny-tour.min.js"></script>
 ```
 ### Example
-```
+```jsx
 <html>
      <body>
         <div id="target1" style="position:absolute;top:1000px;">
